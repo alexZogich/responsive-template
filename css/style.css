@@ -1,0 +1,366 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 125px;
+	border: 2px solid #008000;
+	border-radius: 2px;
+	position: relative;
+}
+
+.clear-fix::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+}
+/*
+	Desktop
+*/
+@media (min-width: 1024px) {
+	.small {
+		display: none;
+	}
+
+	.big {
+		width: 100%;
+	}
+
+	#logoHeader {
+		width: 250px;
+		float: left;
+	}
+
+	#nav {
+		margin-left: 250px;
+		width: 100%;
+	}
+
+	.navItem {
+		font-size: 24px;
+		padding-top: 45px;
+		text-align: center;
+		width: 18%;
+		float: left;
+	}
+
+	#sidebar {
+		width: 250px;
+		float: left;
+	}
+
+	.sidebarItem {
+		font-size: 30px;
+		height: 50px;
+		border: 1px solid #008000;
+	}
+
+	#content {
+		text-align: justify;
+		width: 75%;
+		margin-left: 250px;
+	}
+
+	#contentText {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.articleImg {
+		display: block;
+		margin: 10px auto;
+	}
+
+	footer {
+		border: 1px solid #008000;
+		border-radius: 2px;
+		height: 150px;
+	}
+
+	.footerImg {
+		height: 150px;
+		width: 12%;
+	}
+
+	#menuButton, #menuButtonLeft {
+		display: none;
+	}
+}
+
+/*
+	Tablet
+*/
+@media (min-width: 480px) and (max-width: 1023px) {
+	
+	#menuButtonLeft {
+		display: none;
+	}
+
+	#menuButton {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		right: 5px;
+		width: 125px;
+	}
+
+	.small {
+		width: 125px;
+	}
+
+	.big {
+		display: none;
+	}
+
+	#logoHeader {
+		width: 125px;
+		float: left;
+	}
+
+	#nav {
+		display: none;
+		top: 125px;
+		border: 1px solid #008000;
+  		background-color: #ffffff;
+		width: 50%;
+		position: absolute;
+		right: 0;
+	}
+
+	.navItem {
+		font-size: 24px;
+		padding: 20px 10px;
+		text-align: center;
+		
+	}
+
+	#sidebar {
+		width: 160px;
+		float: left;
+	}
+
+	.sidebarItem {
+		font-size: 26px;
+		height: 50px;
+		border: 1px solid #008000;
+	}
+
+	#content {
+		text-align: justify;
+		width: 75%;
+		margin-left: 160px;
+	}
+
+	#contentText {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.articleImg {
+		display: block;
+		margin: 10px auto;
+		width: 50%;
+	}
+
+	footer {
+		border: 1px solid #008000;
+		border-radius: 2px;
+		height: 150px;
+	}
+
+	.footerImg {
+		height: 150px;
+		width: 13.7%;
+	}
+
+	.lastFoot {
+		display: none;
+	}
+}
+
+@media (max-width: 655px) {
+	#sidebar {
+		width: 115px;
+	}
+
+	.sidebarItem {
+		font-size: 16px;
+		height: 50px;
+		border: 1px solid #008000;
+	}
+
+	#contentText {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#content {
+		margin-left: 115px;
+	}
+
+	.articleImg {
+		width: 65%;
+	}
+
+	.footerImg {
+		height: 150px;
+		width: 16%;
+	}
+
+	.lastFoot, .lastFoot2 {
+		display: none;
+	}
+}
+
+@media (max-width: 520px){
+	footer {
+		height: 130px;
+	}
+	.footerImg {
+		height: 130px;
+		width: 19%;
+	}
+
+	.lastFoot, .lastFoot2, .lastFoot3 {
+		display: none;
+	}
+}
+
+/*
+	Smartphone
+*/
+@media (max-width: 479px){
+	.big {
+		display: none;
+	}
+
+	#nav {
+		display: none;
+		top: 100px;
+		border: 1px solid #008000;
+  		background-color: #ffffff;
+		width: 35%;
+		position: absolute;
+		right: 0;
+	}
+
+	#sidebar {
+		display: none;
+		top: 100px;
+		border: 1px solid #008000;
+  		background-color: #ffffff;
+		width: 35%;
+		position: absolute;
+		left: 0;
+	}
+
+	#contentText {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#content {
+		margin-left: 5px;
+	}
+
+	.articleImg {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.navItem {
+		font-size: 24px;
+		padding: 20px 10px;
+		text-align: center;
+		
+	}
+
+	header {
+		height: 100px;
+	}
+
+	.small {
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+	}
+
+	#menuButton {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 5px;
+		width: 100px;
+	}
+
+	#menuButtonLeft {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 5px;
+		width: 100px;
+	}
+
+	footer {
+		height: 110px;
+	}
+	.footerImg {
+		height: 110px;
+		width: 23%;
+	}
+
+	.lastFoot, .lastFoot2, .lastFoot3, .lastFoot4 {
+		display: none;
+	}
+}
+
+@media (max-width: 340px){
+
+	#nav {
+		top: 75;
+		width: 35%;
+	}
+
+	#sidebar {
+		top: 75px;
+		width: 35%;
+	}
+
+	header {
+		height: 75;
+	}
+
+	.small {
+		width: 75;
+	}
+
+	#menuButton {
+		width: 75px;
+	}
+
+	#menuButtonLeft {
+		width: 75px;
+	}
+
+	footer {
+		height: 75px;
+	}
+	.footerImg {
+		height: 75;
+		width: 23%;
+	}
+
+	.lastFoot, .lastFoot2, .lastFoot3, .lastFoot4 {
+		display: none;
+	}
+}
+
+
+
+

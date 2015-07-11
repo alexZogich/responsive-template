@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div id="logoHeader">
+				<img class="big" src="img/big.jpg">
+				<img class="small" src="img/small.png">
+			</div>
+			<img  id="menuButton" src="img/menu_icon.png">
+			<img  id="menuButtonLeft" src="img/menu_icon.png">
+			<div id="nav">
+				<div class="navItem">Carl</div>
+				<div class="navItem">Ryder</div>
+				<div class="navItem">Big Smoke</div>
+				<div class="navItem">Sweet</div>
+			</div>
+		</header>
+		<div id="contentWrap">
+			<div id="sidebar">
+				<div class="sidebarItem">HESOYAM</div>
+				<div class="sidebarItem">WANRLTW</div>
+				<div class="sidebarItem">AIYPWZQP</div>
+				<div class="sidebarItem">YECGAA</div>
+			</div>
+			<div id="content">
+				<div id="contentText">
+					Grand Theft Auto: San Andreas is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 26 October 2004 for the PlayStation 2 console, and on 7 June 2005 for Microsoft Windows and Xbox. It is the seventh title in the Grand Theft Auto series, and the first main entry since 2002's Grand Theft Auto: Vice City. It was released on the same day as the handheld game Grand Theft Auto Advance.
+					<img src="img/sa.jpg" class="articleImg">
+					<br>
+					Grand Theft Auto: San Andreas is played from a third-person perspective in an open world environment, allowing the player to interact with the game world at their leisure. The game is set within the fictional US state of San Andreas, which is heavily based on California and Nevada.[c] The state of San Andreas consists of three metropolitan cities: Los Santos, based on Los Angeles; San Fierro, based on San Francisco; and Las Venturas, based on Las Vegas. The single-player story follows Carl "CJ" Johnson, who returns home to Los Santos after learning of his mother's murder. CJ finds his old friends and family in disarray, and over the course of the game he attempts to re-establish his old gang, clashes with corrupt cops, and gradually unravels the truth behind his mother's murder. The plot is based on multiple real-life events in Los Angeles, including the rivalry between the Bloods and Crips street gangs, the 1980s crack epidemic, the LAPD Rampart scandal, and the 1992 Los Angeles riots.
+					<img src="img/sa1.png" class="articleImg">
+					<br>
+					Grand Theft Auto: San Andreas is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 26 October 2004 for the PlayStation 2 console, and on 7 June 2005 for Microsoft Windows and Xbox. It is the seventh title in the Grand Theft Auto series, and the first main entry since 2002's Grand Theft Auto: Vice City. It was released on the same day as the handheld game Grand Theft Auto Advance.
+				</div>
+					
+				</span>
+			</div>
+		</div>
+		<footer>
+			<img class="footerImg" src="img/footer.jpg">
+			<img class="footerImg"src="img/footer1.jpg">
+			<img class="footerImg" src="img/footer2.jpg">
+			<img class="footerImg"src="img/footer3.jpg">
+			<img class="footerImg lastFoot"src="img/footerMiddle.jpg">
+			<img class="footerImg lastFoot3" src="img/footer4.jpg">
+			<img class="footerImg lastFoot4" src="img/footer5.jpg">
+			<img class="footerImg lastFoot2" src="img/footer6.jpg">
+			
+		</footer>
+		<script type="text/javascript">
+			var menuButton = document.getElementById("menuButton")
+									 .addEventListener("click", function () {showMenu(menu);});
+			var menuButton = document.getElementById("menuButtonLeft")
+									 .addEventListener("click", function () {showMenu(sidebar);});
+			var menu = document.getElementById("nav");
+			var sidebar = document.getElementById("sidebar");
+		
+			function showMenu(item) {
+
+				if (item.style.display == "block") {
+					item.style.display = "none";
+				} else {
+					item.style.display = "block";
+				}
+			}
+		</script>
+	</body>
+</html>
